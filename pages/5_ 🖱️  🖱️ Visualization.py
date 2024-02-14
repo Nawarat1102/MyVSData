@@ -15,25 +15,21 @@ st.title("แสดงข้อมูลประเทศ")
 chart_type = st.selectbox("เลือกประเภทกราฟ", ["bar chart", "line chart", "pie chart"])
 
 # แสดง chart
+import matplotlib.pyplot as plt
 if chart_type == "bar chart":
     st.bar_chart(data, x="Country", y="Population")
 elif chart_type == "line chart":
     st.line_chart(data, x="Country", y="Population")
 elif chart_type == "pie chart":
-    st.pie_chart(data, values="Population", names="Country")
+    labels = "ไทย", "อเมริกา", "จีน", "ญี่ปุ่น"
+    sizes = [70000000, 330000000, 1400000000, 125000000]
+    explode = (0, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
+
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+    st.pyplot(fig1)
+
 
 # แสดงข้อมูลตาราง
-labels = 'sepal.width', 'sepal.length', 'petal.width', 'petal.length'
 
-x1=df['sepal.width'].mean()
-x2=df['sepal.length'].mean()
-x3=df['petal.width'].mean()
-x4=df['petal.length'].mean()
-
-sizes = [x1, x2, x3, x4]
-
-explode = (0, 0.1, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
-
-fig1, ax1 = plt.subplots()
-ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
-        shadow=True, startangle=90)
