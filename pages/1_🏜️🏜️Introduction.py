@@ -9,7 +9,7 @@ st.set_page_config(
 )
 st.sidebar.success("เลือกรายการด้านบน.")
 
-st.header("# 🍀🍀🍀 การพยากรณ์ข้อมูล....! 👋  🧑🏽‍🏫 ")
+st.header("# 🐿️🍀🍀 การพยากรณ์ข้อมูล....! 👋  🧑🏽‍🏫 ")
 st.subheader("### 1.หลักการและเหตุผล")
 st.info("""
         xxxxxxxxxxxxxxxxxxxxxxx <br>
