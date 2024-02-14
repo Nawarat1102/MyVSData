@@ -21,7 +21,7 @@ if chart_type == "bar chart":
 elif chart_type == "line chart":
     st.line_chart(data, x="Country", y="Population")
 elif chart_type == "pie chart":
-    labels = "ไทย", "อเมริกา", "จีน", "ญี่ปุ่น"
+    labels = "Thi", "Usa", "China", "Japan"
     sizes = [70000000, 330000000, 1400000000, 125000000]
     explode = (0, 0.1,0,0)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
