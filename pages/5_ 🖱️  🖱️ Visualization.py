@@ -23,7 +23,7 @@ elif chart_type == "line chart":
 elif chart_type == "pie chart":
     labels = "ไทย", "อเมริกา", "จีน", "ญี่ปุ่น"
     sizes = [70000000, 330000000, 1400000000, 125000000]
-    explode = (0, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
+    explode = (0, 0.1,0,0)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
     fig1, ax1 = plt.subplots()
     ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
