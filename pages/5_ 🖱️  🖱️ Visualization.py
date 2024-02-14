@@ -3,7 +3,7 @@ import pandas as pd
 
 # ตัวอย่างข้อมูล
 data = pd.DataFrame({
-    "Country": ["Thi", "Usa", "China", "Japan"],
+    "Country": ["Thai", "Usa", "China", "Japan"],
     "Population": [70000000, 330000000, 1400000000, 125000000],
     "GDP": [400000000000, 25000000000000, 17000000000000, 5000000000000]
 })
@@ -21,7 +21,7 @@ if chart_type == "bar chart":
 elif chart_type == "line chart":
     st.line_chart(data, x="Country", y="Population")
 elif chart_type == "pie chart":
-    labels = "Thi", "Usa", "China", "Japan"
+    labels = "Thai", "Usa", "China", "Japan"
     sizes = [70000000, 330000000, 1400000000, 125000000]
     explode = (0, 0.1,0,0)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
