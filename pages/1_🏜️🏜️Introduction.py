@@ -9,7 +9,7 @@ st.set_page_config(
 )
 st.sidebar.success("เลือกรายการด้านบน.")
 
-st.header("# 🐿️🍀🍀 การทำ Data Visualization! 👋  🧑🏽‍🏫 ")
+st.header("🖥️⌨️🖱️ การทำ Data Visualization! 🖱️⌨️🖥️")
 st.subheader("1.หลักการและเหตุผล")
 st.info("""
         xxxxxxxxxxxxxxxxxxxxxxx <br>
