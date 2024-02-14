@@ -32,4 +32,6 @@ elif chart_type == "pie chart":
 
 
 # แสดงข้อมูลตาราง
-
+# แสดงข้อมูล GDP
+st.write("ข้อมูล GDP")
+st.table(data[["Country", "GDP"]])
