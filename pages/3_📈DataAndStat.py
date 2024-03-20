@@ -12,4 +12,6 @@ st.write(df.head(10))
 st.header("ค่าสถิติของข้อมูล:")
 statistics = df.describe()
 
-st.write(statistics)
+if(st.button("แสดงข้อมูลตัวอย่าง")):
+    st.write(statistics)
+    st.button("ไม่แสดงข้อมูลตัวอย่าง")
