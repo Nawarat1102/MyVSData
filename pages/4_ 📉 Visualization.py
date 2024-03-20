@@ -3,7 +3,7 @@ import pandas as pd
 
 df=pd.read_csv("./data/car_pri.csv")
 
-st.bar_chart(df, x='make', y='model')
+st.bar_chart(df, x='year', y='make')
 
 
 
