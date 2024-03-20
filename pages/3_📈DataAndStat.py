@@ -14,4 +14,5 @@ statistics = df.describe()
 
 if(st.button("แสดงข้อมูลตัวอย่าง")):
     st.write(statistics)
+else:
     st.button("ไม่แสดงข้อมูลตัวอย่าง")
