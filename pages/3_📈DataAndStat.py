@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.header("Versicolor")
+
 st.image("./img/bmw.png")
 
 st.header("Show Data Index Price")
