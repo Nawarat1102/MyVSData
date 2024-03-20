@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv("./data/app1.csv")
+df=pd.read_csv("./data/app1.csv")
 
-grouped_data = df.groupby('Sex')['BMI'].mean()
+st.bar_chart(df, x='Sex', y='BMI', color=["#FF0000", "#0000FF"])
 
