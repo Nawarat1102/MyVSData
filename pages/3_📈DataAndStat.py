@@ -7,7 +7,7 @@ df=pd.read_csv("./data/car_pri.csv")
 st.write(df.head(10))
 
 st.header("Show Chart")
+statistics = df.describe()
 
-st.line_chart(
-    df[['sellingprice', 'make']]
-)
+print("\nค่าสถิติของข้อมูล:")
+print(statistics)
