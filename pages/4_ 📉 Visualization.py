@@ -3,7 +3,7 @@ import pandas as pd
 
 df=pd.read_csv("./data/car_pri.csv")
 
-st.scatter(df['make'], df['model'], x_label="Make", y_label="Model")
+st.bar_chart(df, x='make', y='model')
 
 
 
