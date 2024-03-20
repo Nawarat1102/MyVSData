@@ -5,6 +5,3 @@ df=pd.read_csv("./data/car_pri.csv")
 
 st.bar_chart(df, x='year', y='make')
 
-
-
-
