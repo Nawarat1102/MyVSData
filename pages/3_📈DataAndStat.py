@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 
 
-st.image("./img/bmw.png")
+st.image("./img/ti.jpg")
 
 st.header("Show Data Index Price")
 
-df=pd.read_csv("./data/car_pri.csv")
+df=pd.read_csv("./data/app1.csv")
 st.write(df.head(10))
 
 st.header("ค่าสถิติของข้อมูล:")

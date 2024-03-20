@@ -16,7 +16,7 @@ lottie_url_hello = "https://lottie.host/a6ba2cb1-4445-4e24-b0c0-29c910e30d35/siF
 lottie_hello = load_lottieurl(lottie_url_hello)
 
 st.header("การทำ Data Visualization....")
-st.header("เรื่อง...การขายรถยนต์")
+st.header("เรื่อง...สถิติการเกิดไส้ติ่งอักเสบในเด็ก")
 
 #การเรียกใช้งาาน lottie file
 st_lottie(lottie_hello, key="hello")
