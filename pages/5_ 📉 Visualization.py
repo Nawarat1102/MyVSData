@@ -10,7 +10,7 @@ if(st.button("แสดงกราฟแท่ง")):
         }
     )
     st.bar_chart(chart_data, x="ปีที่ขาย", y=["ยี่ห้อรถ"], color=["#FF0003"])
-    st.button("ไม่แสดงกราฟแท่ง")
+   
 else:
     st.button("ไม่แสดงกราฟแท่ง")
 
