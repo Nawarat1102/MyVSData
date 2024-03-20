@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+df = pd.read_csv("./data/car_pri.csv")
+
 if(st.button("แสดงกราฟแท่ง")):
     chart_data = pd.DataFrame(
     {
