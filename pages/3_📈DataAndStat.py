@@ -9,5 +9,5 @@ st.write(df.head(10))
 st.header("Show Chart")
 statistics = df.describe()
 
-print("\nค่าสถิติของข้อมูล:")
-print(statistics)
+st.write("ค่าสถิติของข้อมูล:")
+st.write(statistics)
