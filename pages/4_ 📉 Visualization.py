@@ -3,11 +3,7 @@ import pandas as pd
 
 df=pd.read_csv("./data/car_pri.csv")
 
-
-plt.scatter(df['make'], df['model'])
-plt.xlabel("Make")
-plt.ylabel("Model")
-plt.show()
+st.scatter(df['make'], df['model'], x_label="Make", y_label="Model")
 
 
 
