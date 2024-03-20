@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df=pd.read_csv("./data/car_pri.csv")
+df=pd.read_csv("./data/app1.csv")
 
-st.bar_chart(df, x='year', y='make')
+st.bar_chart(df, x='BMI', y='Sex')
 
