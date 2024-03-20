@@ -1,23 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-# โหลดข้อมูล
-df = pd.read_csv("./data/car_pri.csv")
+df = pd.read_csv("car_prices.csv")
 
-# สร้างปุ่มเพื่อเปิดแสดงแผนภาพแท่ง
-show_chart = st.button("แสดงกราฟแท่ง")
-
-# ถ้าปุ่มถูกกด
-if show_chart:
-    # สร้างข้อมูลสำหรับแผนภาพแท่ง
-    chart_data = pd.DataFrame({
-        "ปีที่ขาย": df['year'],
-        "ยี่ห้อรถ": df['make']
-    })
-    # แสดงแผนภาพแท่ง
-    st.bar_chart(chart_data, x="ปีที่ขาย", y=["ยี่ห้อรถ"], color=["#FF0003"])
-    # รอการกดปุ่ม "ไม่แสดงกราฟแท่ง" เพื่อซ่อนแผนภาพแท่ง
-    st.button("ไม่แสดงกราฟแท่ง")
+plt.scatter(df["make"], df["model"])
+plt.xlabel("Make")
+plt.ylabel("Model")
+plt.show()
 
 
 
