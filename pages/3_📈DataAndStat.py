@@ -8,7 +8,7 @@ df = pd.read_csv("./data/app1.csv")
 
 # สร้างแผนภูมิแท่ง
 fig_bar = px.bar(df['Sex'].value_counts(), title='Gender Comparison',
-                 color_discrete_map={'Male': 'royalblue', 'Female': 'red'})
+                 color_discrete_map={'male': 'royalblue', 'female': 'red'})
 st.plotly_chart(fig_bar)
 
 
