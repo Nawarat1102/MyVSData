@@ -12,6 +12,8 @@ fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Se
                 title="Scatter Plot: Age vs BMI")
 st.plotly_chart(fig_scatter)
 
+fig_line_height = px.line(df, x="Height",y="Weight", title="Height Growth")
+st.plotly_chart(fig_line_height)
 
 
 
