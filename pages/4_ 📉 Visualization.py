@@ -19,6 +19,11 @@ fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Se
 st.plotly_chart(fig_scatter)
 
 
+st.header("การเปรียบเทียบการเกิดระหว่างดัชนีมวลกายและอายุ")
+fig_scatter = px.scatter(df, x='Height', y='Weight', title='Scatter Plot : ดัชนีมวลกายและอายุ')
+st.plotly_chart(fig_scatter)
+
+
 st.header("เปรียบเทียบดัชนีมวลกายและการรักษาระหว่างเพศ")
 fig_bar = px.bar(df, x="Management", y="BMI", color="Sex", barmode="group",
                  title="Bar Plot: การรักษาแบบอนุรัษณ์นิยม ")
