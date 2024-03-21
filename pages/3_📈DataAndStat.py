@@ -34,7 +34,4 @@ st.plotly_chart(fig_pie)
 
 
 
-# สร้างแผนภูมิแท่ง
-fig_bar = px.bar(df, x="Severity", y="BMI", color="Sex", barmode="group",
-                 title="Bar Plot: Average BMI by Severity and Sex")
-st.plotly_chart(fig_bar)
+
