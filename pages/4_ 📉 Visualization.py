@@ -26,7 +26,7 @@ st.plotly_chart(fig_scatter)
 
 st.header("เปรียบเทียบดัชนีมวลกายและการรักษาระหว่างเพศ")
 fig_bar = px.bar(df, x="Management", y="BMI", color="Sex", barmode="group",
-                 title="Bar Plot: การรักษาแบบอนุรัษณ์นิยม ")
+                 title="Bar Plot: การรักษาแบบอนุรักษ์นิยม ")
 st.plotly_chart(fig_bar)
 
 
