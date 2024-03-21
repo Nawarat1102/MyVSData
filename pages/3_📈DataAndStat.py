@@ -9,6 +9,10 @@ df = pd.read_csv("./data/app1.csv")
 fig_bar = px.bar(df['Sex'].value_counts(), title='กราฟแผนภูมิแท่ง : อัตราการเกิดในเพศ')
 st.plotly_chart(fig_bar)
 
+fig_bar = px.bar(df['Height'].value_counts(), title='กราฟแผนภูมิแท่ง : อัตราการเกิดในเพศ')
+st.plotly_chart(fig_bar)
+
+
 fig_box_bmi = px.box(df, y="Age", title="Box plot : อัตราการเกิดในช่วงอายุ")
 st.plotly_chart(fig_box_bmi)
 
