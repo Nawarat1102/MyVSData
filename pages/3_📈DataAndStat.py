@@ -10,18 +10,12 @@ fig_bar = px.bar(df['Sex'].value_counts(), title='กราฟแผนภูม
 st.plotly_chart(fig_bar)
 
 # สร้างกราฟแบบแท่ง
-fig_bar = px.bar(df['Age'].value_counts(), title='กราฟแผนภูมิแท่ง : อัตราการเกิดในช่วงอายุ')
-st.plotly_chart(fig_bar)
+fig_box_bmi = px.box(df, y="BMI", title="BMI Distribution")
+st.plotly_chart(fig_box_bmi)
 
 # สร้างกราฟวงกลม
 fig_pie = px.pie(df, values='BMI', title='BMI Distribution')
 st.plotly_chart(fig_pie)
-
-df_management = df[df['Management'] == 'Management']
-
-# สร้างกราฟ Box Plot
-fig_box = px.box(df_management, y="Management", title="Management Distribution for Management")
-st.plotly_chart(fig_box)
 
 
 
