@@ -1,5 +1,7 @@
 import plotly.express as px
 import pandas as pd
+import streamlit as st
+
 
 # สร้าง DataFrame ของคุณ
 # เช่น
@@ -13,4 +15,3 @@ fig.show()
 fig = px.bar(df, x="Sex", y="Severity")
 fig.show()
 
-# ... เพิ่มเติมสำหรับกราฟอื่น ๆ
