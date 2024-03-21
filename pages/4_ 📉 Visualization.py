@@ -14,6 +14,12 @@ fig_line = px.line(df, x="Sex", y="Weight")
 # สร้างแผนภูมิแท่ง
 fig_bar = px.bar(df, x="Age", y="BMI")
 
+# สร้างแผนภูมิเปรียบเทียบ
+fig_box = px.box(df, x='Sex', y='BMI')
+
+# แสดงแผนภูมิโดยใช้คำสั่ง st.plotly_chart()
+st.plotly_chart(fig_box)
+
 # แสดงกราฟโดยใช้คำสั่ง st.plotly_chart()
 st.plotly_chart(fig_line)
 st.plotly_chart(fig_bar)
