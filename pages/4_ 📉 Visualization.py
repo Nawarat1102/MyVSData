@@ -1,12 +1,16 @@
-import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
 
-df=pd.read_csv("./data/app1.csv")
+# อ่านข้อมูลจากไฟล์ CSV
+df = pd.read_csv("app_data.csv")
 
-st.bar_chart(df, x='Sex', y='BMI')
+# สมมติว่า BMI และ Severity เป็นชื่อคอลัมน์ใน CSV ของคุณ
+BMI = df["BMI"]
+Severity = df["Severity"]
 
+# วาดแผนภูมิกระจาย
 plt.scatter(BMI, Severity)
-plt.xlabel('BMI')
-plt.ylabel('Severity')
-plt.title('กราฟกระจายแสดงความสัมพันธ์ระหว่าง BMI กับความรุนแรง')
+plt.xlabel("BMI")
+plt.ylabel("Severity")
+plt.title("แผนภูมิกระจายแสดงความสัมพันธ์ระหว่าง BMI กับความรุนแรง")
 plt.show()
