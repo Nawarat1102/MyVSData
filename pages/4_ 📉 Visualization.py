@@ -9,7 +9,7 @@ st.image("./img/ti.jpg")
 df = pd.read_csv("./data/app1.csv")
 
 fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Sex", "Height", "Weight", "Length_of_Stay"],
-                title="Scatter Plot: Age vs BMI")
+                title="Scatter Plot: การเปรียบเทียบความรุนของของการเกิดระหว่างดัชนีมวลกายและอายุ")
 st.plotly_chart(fig_scatter)
 
 
