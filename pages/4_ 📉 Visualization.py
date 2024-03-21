@@ -8,6 +8,14 @@ st.image("./img/ti.jpg")
 # เช่น
 df = pd.read_csv("./data/app1.csv")
 
+fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Sex", "Height", "Weight", "Length_of_Stay"],
+                title="Scatter Plot: Age vs BMI")
+st.plotly_chart(fig_scatter)
+
+
+
+
+
 # สร้างแผนภูมิเส้น
 fig_line = px.line(df, x="Weight", y="Sex")
 
