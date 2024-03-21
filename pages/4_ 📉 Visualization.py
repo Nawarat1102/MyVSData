@@ -12,7 +12,7 @@ df = pd.read_csv("./data/app1.csv")
 fig_line = px.line(df, x="Age", y="BMI")
 
 # สร้างแผนภูมิแท่ง
-fig_bar = px.bar(df, x="Sex", y="Severity")
+fig_bar = px.bar(df, x="Sex", y="Weight")
 
 # แสดงกราฟโดยใช้คำสั่ง st.plotly_chart()
 st.plotly_chart(fig_line)
