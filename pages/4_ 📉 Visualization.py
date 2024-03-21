@@ -29,3 +29,5 @@ st.plotly_chart(fig_box)
 # แสดงกราฟโดยใช้คำสั่ง st.plotly_chart()
 st.plotly_chart(fig_line)
 st.plotly_chart(fig_bar)
+
+st.image("./img/ti.jpg")

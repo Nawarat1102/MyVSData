@@ -17,9 +17,6 @@ lottie_url_hello = "https://lottie.host/a1c75f38-0233-4edb-b653-502bd22dd4c6/oIW
 lottie_hello = load_lottieurl(lottie_url_hello)
 st_lottie(lottie_hello, key="hello")
 
-
-st.image("./img/ti.jpg")
-
 st.header("ดัชนีข้อมูล")
 
 df=pd.read_csv("./data/app1.csv")

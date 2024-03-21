@@ -2,7 +2,6 @@ import plotly.express as px
 import pandas as pd
 import streamlit as st
 
-# โหลดข้อมูล
 df = pd.read_csv("./data/app1.csv")
 
 
