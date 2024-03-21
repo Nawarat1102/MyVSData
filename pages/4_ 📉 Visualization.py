@@ -1,16 +1,11 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.express as px
 
-# อ่านข้อมูลจากไฟล์ CSV
-df = pd.read_csv("app1.csv")
+# สร้างแผนภูมิเส้น
+fig = px.line(df, x="Age", y="BMI")
+fig.show()
 
-# สมมติว่า BMI และ Severity เป็นชื่อคอลัมน์ใน CSV ของคุณ
-#BMI = df["BMI"]
-#cSeverity = df["Severity"]
+# สร้างแผนภูมิแท่ง
+fig = px.bar(df, x="Sex", y="Severity")
+fig.show()
 
-# วาดแผนภูมิกระจาย
-plt.scatter(BMI, Severity)
-plt.xlabel("BMI")
-plt.ylabel("Severity")
-plt.title("แผนภูมิกระจายแสดงความสัมพันธ์ระหว่าง BMI กับความรุนแรง")
-plt.show()
+# ... เพิ่มเติมสำหรับกราฟอื่น ๆ
