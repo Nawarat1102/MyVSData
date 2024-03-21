@@ -15,7 +15,7 @@ fig_line = px.line(df, x="Weight", y="Sex")
 fig_bar = px.bar(df, x="Age", y="BMI")
 
 # สร้างแผนภูมิเปรียบเทียบ
-fig_box = px.box(df, x='Sex', y='BMI')
+#fig_box = px.box(df, x='Sex', y='BMI')
 
 # สร้างแผนภูมิแผ่น
 fig_pie = px.pie(df, names='Length_of_Stay')
