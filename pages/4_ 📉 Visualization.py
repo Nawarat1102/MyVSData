@@ -18,13 +18,12 @@ fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Se
 st.plotly_chart(fig_scatter)
 
 
-fig_bar = px.bar(df, x='Severity', y='Length_of_Stay', title='Bar Chart: Weight vs Height')
+fig_bar = px.bar(df, x="Management", y="BMI", color="Sex", barmode="group",
+                 title="Bar Plot: เปรียบเทียบดัชนีมวลกายและความรุนแกรงระหว่างเพศ")
 st.plotly_chart(fig_bar)
 
 
 
-
-# สร้างแผนภูมิแท่ง
 fig_bar = px.bar(df, x="Severity", y="BMI", color="Sex", barmode="group",
                  title="Bar Plot: เปรียบเทียบดัชนีมวลกายและความรุนแกรงระหว่างเพศ")
 st.plotly_chart(fig_bar)
