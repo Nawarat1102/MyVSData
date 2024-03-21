@@ -6,11 +6,11 @@ df = pd.read_csv("./data/app1.csv")
 
 
 # สร้างแผนภูมิแท่ง
-fig_bar = px.bar(df['Sex'].value_counts(), title='อันตราการเกิดในเพศ')
+fig_bar = px.bar(df['Sex'].value_counts(), title='กราฟแผนภูมิแท่ง : อันตราการเกิดในเพศ')
 st.plotly_chart(fig_bar)
 
 # สร้างกราฟแบบแท่ง
-fig_bar = px.bar(df['Age'].value_counts(), title='Age Distribution')
+fig_bar = px.bar(df['Age'].value_counts(), title='กราฟแผนภูมิแท่ง :อัตราการเกิดในอายุ')
 st.plotly_chart(fig_bar)
 
 
