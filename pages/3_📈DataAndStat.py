@@ -20,19 +20,14 @@ st.plotly_chart(fig_box_bmi)
 
 
 # สร้างกราฟวงกลม
-fig_pie = px.pie(df, values='Severity', title='BMI Distribution')
+management_counts = df['Management'].value_counts()
+
+# สร้างกราฟแบบวงกลม
+fig_pie = px.pie(values=management_counts.values, names=management_counts.index, title='จำนวนของแต่ละ Management')
 st.plotly_chart(fig_pie)
 
 
 
-# Scatter Plot
-#แกน X ของกราฟนี้จะแสดงอายุของเด็ก (Age) และแกน Y จะแสดงดัชนีมวลกาย (BMI) โดยแบ่งตามระดับความรุนแรงของอาการ (Severity) 
-#ซึ่งจะแสดงด้วยสีที่แตกต่างกัน นอกจากนี้ โดยที่เมื่อนำเมาส์ไปวางที่จุดบนกราฟ จะแสดงข้อมูลเพิ่มเติมเกี่ยวกับเพศ 
-#(Sex), ส่วนสูง (Height), น้ำหนัก (Weight), และเวลาการรักษา (Treatment Time) ในรูปแบบของ tooltip 
-
-fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Sex", "Height", "Weight", "Length_of_Stay"],
-                title="Scatter Plot: Age vs BMI")
-st.plotly_chart(fig_scatter)
 
 
 # สร้างแผนภูมิแท่ง
