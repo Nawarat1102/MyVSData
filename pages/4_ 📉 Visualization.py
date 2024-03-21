@@ -18,7 +18,7 @@ fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Se
 st.plotly_chart(fig_scatter)
 
 
-fig_bar = px.bar(df, x='Height', y='Weight', title='Bar Chart: Weight vs Height')
+fig_bar = px.bar(df, x='Length_of_Stay', y='Severity', title='Bar Chart: Weight vs Height')
 st.plotly_chart(fig_bar)
 
 
