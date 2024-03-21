@@ -2,7 +2,7 @@ import plotly.express as px
 import pandas as pd
 import streamlit as st
 
-
+st.image("./img/ti.jpg")
 # สร้าง DataFrame ของคุณ
 # เช่น
 df=pd.read_csv("./data/app1.csv")
