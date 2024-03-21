@@ -31,8 +31,8 @@ if(st.button("แสดงข้อมูลตัวอย่าง")):
 else:
     st.button("ไม่แสดงข้อมูลตัวอย่าง")
 
-mean_by_management = df.groupby('Management').size().div(len(df))
+management_counts = df['Management'].value_counts()
 
 # แสดงผลลัพธ์
-st.write("ค่าเฉลี่ยของ Management:")
-st.write(mean_by_management)
+st.write("จำนวนของแต่ละ Management:")
+st.write(management_counts)
