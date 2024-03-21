@@ -33,12 +33,12 @@ else:
 
 management_counts = df['Management'].value_counts()
 
-# แสดงผลลัพธ์
-st.write("จำนวนของแต่ละ Management:")
+st.write("จำนวนในการผ่าตัดแต่ละแบบ:")
 st.write(management_counts)
+
+
 
 management_counts = df['Severity'].value_counts()
 
-# แสดงผลลัพธ์
-st.write("จำนวนของแต่ละ Severity:")
+st.write("จำนวนความรุนแรงแต่ละระดับ:")
 st.write(management_counts)
