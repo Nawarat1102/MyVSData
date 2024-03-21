@@ -9,13 +9,16 @@ df = pd.read_csv("./data/app1.csv")
 fig_bar = px.bar(df['Sex'].value_counts(), title='กราฟแผนภูมิแท่ง : อัตราการเกิดในเพศ')
 st.plotly_chart(fig_bar)
 
+fig_box_bmi = px.box(df, y="Age", title="Box plot : อัตราการเกิดในช่วงอายุ")
+st.plotly_chart(fig_box_bmi)
+
 # สร้างกราฟแบบแท่ง
 fig_box_bmi = px.box(df, y="BMI", title="BMI Distribution")
 st.plotly_chart(fig_box_bmi)
 
+fig_hist = px.histogram(df, x="Weight", title="Weight Distribution", nbins=20)
+st.plotly_chart(fig_hist)
 
-fig_box_bmi = px.box(df, y="Age", title="Age Distribution")
-st.plotly_chart(fig_box_bmi)
 
 # สร้างกราฟวงกลม
 fig_pie = px.pie(df, values='BMI', title='BMI Distribution')
