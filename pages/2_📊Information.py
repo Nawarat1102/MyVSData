@@ -30,3 +30,9 @@ if(st.button("แสดงข้อมูลตัวอย่าง")):
     st.button("ไม่แสดงข้อมูลตัวอย่าง")
 else:
     st.button("ไม่แสดงข้อมูลตัวอย่าง")
+
+mean_by_management = df.groupby('Management').size().div(len(df))
+
+# แสดงผลลัพธ์
+st.write("ค่าเฉลี่ยของ Management:")
+st.write(mean_by_management)
