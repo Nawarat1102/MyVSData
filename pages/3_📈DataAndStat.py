@@ -13,6 +13,10 @@ st.plotly_chart(fig_bar)
 fig_box_bmi = px.box(df, y="BMI", title="BMI Distribution")
 st.plotly_chart(fig_box_bmi)
 
+
+fig_box_bmi = px.box(df, y="Age", title="Age Distribution")
+st.plotly_chart(fig_box_bmi)
+
 # สร้างกราฟวงกลม
 fig_pie = px.pie(df, values='BMI', title='BMI Distribution')
 st.plotly_chart(fig_pie)
