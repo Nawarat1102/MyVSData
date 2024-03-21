@@ -1,19 +1,11 @@
-import streamlit as st
+import plotly.express as px
 import pandas as pd
+import streamlit as st
 
+# โหลดข้อมูล
+df = pd.read_csv("./data/ข้อมูลอักเสบในเด็ก.csv")
 
-st.image("./img/ti.jpg")
-
-st.header("Show Data Index Price")
-
-df=pd.read_csv("./data/app1.csv")
-st.write(df.head(10))
-
-st.header("ค่าสถิติของข้อมูล:")
-statistics = df.describe()
-
-if(st.button("แสดงข้อมูลตัวอย่าง")):
-    st.write(statistics)
-    st.button("ไม่แสดงข้อมูลตัวอย่าง")
-else:
-    st.button("ไม่แสดงข้อมูลตัวอย่าง")
+# Scatter Plot
+fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Sex", "Height", "Weight", "Length_of_Stay"],
+                          title="Scatter Plot: Age vs BMI")
+st.plotly_chart(fig_scatter)
