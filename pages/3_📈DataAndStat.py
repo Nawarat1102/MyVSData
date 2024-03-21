@@ -13,14 +13,14 @@ fig_box_bmi = px.box(df, y="Age", title="Box plot : อัตราการเ�
 st.plotly_chart(fig_box_bmi)
 
 # สร้างกราฟแบบแท่ง
-fig_box_bmi = px.box(df, y="BMI", title="BMI Distribution")
+fig_box_bmi = px.box(df, y="BMI", title="Box plot : ดัชนีมวลกาย")
 st.plotly_chart(fig_box_bmi)
 
 
 
 
 # สร้างกราฟวงกลม
-fig_pie = px.pie(df, values='BMI', title='BMI Distribution')
+fig_pie = px.pie(df, values='Severity', title='BMI Distribution')
 st.plotly_chart(fig_pie)
 
 
