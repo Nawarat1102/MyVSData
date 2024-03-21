@@ -7,9 +7,12 @@ df = pd.read_csv("./data/app1.csv")
 
 
 # สร้างแผนภูมิแท่ง
-fig_bar = px.bar(df['Sex'].value_counts(), title='Gender Comparison')
+fig_bar = px.bar(df['Sex'].value_counts(), title='อันตราการเกิดในเพศ')
 st.plotly_chart(fig_bar)
 
+# สร้างแผนภูมิเส้น
+fig_line = px.line(df, x="Age", title="Age Distribution")
+st.plotly_chart(fig_line)
 
 
 
