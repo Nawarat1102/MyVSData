@@ -13,8 +13,7 @@ fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Se
 st.plotly_chart(fig_scatter)
 
 
-fig_line_height = px.line(df, x="Weight",y="Height", title="Height Growth")
-st.plotly_chart(fig_line_height)
+
 
 
 # สร้างแผนภูมิแท่ง
