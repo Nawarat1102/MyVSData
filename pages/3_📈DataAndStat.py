@@ -16,7 +16,7 @@ st.plotly_chart(fig_box_bmi)
 fig_box_bmi = px.box(df, y="BMI", title="BMI Distribution")
 st.plotly_chart(fig_box_bmi)
 
-fig_line_height = px.line(df, y="Height", title="Height Growth")
+fig_line_height = px.line(df, x="Height", title="Height Growth")
 st.plotly_chart(fig_line_height)
 
 
