@@ -9,20 +9,25 @@ df = pd.read_csv("./data/app1.csv")
 fig_bar = px.bar(df['Sex'].value_counts(), title='กราฟแผนภูมิแท่ง : อัตราการเกิดในเพศ')
 st.plotly_chart(fig_bar)
 
-fig_bar = px.bar(df['Height'].value_counts(), title='กราฟแผนภูมิแท่ง : อัตราการเกิดในเพศ')
-st.plotly_chart(fig_bar)
+
+age = px.box(df, y="Age", title="Box plot : อัตราการเกิดในช่วงอายุ")
+st.plotly_chart(age)
 
 
-fig_box_bmi = px.box(df, y="Age", title="Box plot : อัตราการเกิดในช่วงอายุ")
-st.plotly_chart(fig_box_bmi)
+hei = px.box(df, y="Height", title="Box plot : อัตราการเกิดในช่วงส่วนสูง")
+st.plotly_chart(hei)
 
 
-fig_box_bmi = px.box(df, y="BMI", title="Box plot : ดัชนีมวลกาย")
-st.plotly_chart(fig_box_bmi)
+wei = px.box(df, y="Weight", title="Box plot : อัตราการเกิดในช่วงน้ำหนัก")
+st.plotly_chart(wei)
 
 
-fig_box_bmi = px.box(df, y="Length_of_Stay", title="Box plot : ระยะเวลาในการพักฟื้น")
-st.plotly_chart(fig_box_bmi)
+bmi = px.box(df, y="BMI", title="Box plot : ดัชนีมวลกาย")
+st.plotly_chart(bmi)
+
+
+day = px.box(df, y="Length_of_Stay", title="Box plot : ระยะเวลาในการพักฟื้น")
+st.plotly_chart(day)
 
 
 management_counts = df['Management'].value_counts()
