@@ -9,7 +9,7 @@ st.image("./img/ti.jpg")
 df = pd.read_csv("./data/app1.csv")
 
 # สร้างแผนภูมิเส้น
-fig_line = px.line(df, x="Sex", y="Weight")
+fig_line = px.line(df, x="Weight", y="Sex")
 
 # สร้างแผนภูมิแท่ง
 fig_bar = px.bar(df, x="Age", y="BMI")
