@@ -36,3 +36,9 @@ management_counts = df['Management'].value_counts()
 # แสดงผลลัพธ์
 st.write("จำนวนของแต่ละ Management:")
 st.write(management_counts)
+
+management_counts = df['Severity'].value_counts()
+
+# แสดงผลลัพธ์
+st.write("จำนวนของแต่ละ Severity:")
+st.write(management_counts)
