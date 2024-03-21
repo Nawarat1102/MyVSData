@@ -18,7 +18,7 @@ fig_bar = px.bar(df, x="Age", y="BMI")
 fig_box = px.box(df, x='Sex', y='BMI')
 
 # สร้างแผนภูมิแผ่น
-fig_pie = px.pie(df, names='BMI')
+fig_pie = px.pie(df, names='Length_of_Stay')
 
 # แสดงแผนภูมิโดยใช้คำสั่ง st.plotly_chart()
 st.plotly_chart(fig_pie)
