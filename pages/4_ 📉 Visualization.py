@@ -1,4 +1,9 @@
 import plotly.express as px
+import pandas as pd
+
+# สร้าง DataFrame ของคุณ
+# เช่น
+df = pd.read_csv("app1.csv")
 
 # สร้างแผนภูมิเส้น
 fig = px.line(df, x="Age", y="BMI")
