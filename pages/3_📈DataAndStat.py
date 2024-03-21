@@ -27,7 +27,7 @@ st.plotly_chart(fig_pie)
 
 
 management_counts = df['Severity'].value_counts()
-fig_pie = px.pie(values=management_counts.values, names=management_counts.index, title='Plotly Express : อัตราความรุนแรงของการเกกิด')
+fig_pie = px.pie(values=management_counts.values, names=management_counts.index, title='Plotly Express : อัตราความรุนแรงของการเกิด')
 st.plotly_chart(fig_pie)
 
 
