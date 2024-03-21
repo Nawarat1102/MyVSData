@@ -3,7 +3,7 @@ import pandas as pd
 
 # สร้าง DataFrame ของคุณ
 # เช่น
-df = pd.read_csv("app1.csv")
+df=pd.read_csv("./data/app1.csv")
 
 # สร้างแผนภูมิเส้น
 fig = px.line(df, x="Age", y="BMI")
