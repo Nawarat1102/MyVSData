@@ -10,7 +10,7 @@ BMI = df['BMI']
 Severity = df['Severity']
 
 plt.scatter(BMI, Severity)
-plt.xlabel('BMI')
-plt.ylabel('Severity')
+plt.xlabel('Severity')
+plt.ylabel('BMI')
 plt.title('กราฟกระจายแสดงความสัมพันธ์ระหว่าง BMI กับความรุนแรง')
 plt.show()
