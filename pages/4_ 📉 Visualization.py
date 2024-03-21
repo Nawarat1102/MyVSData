@@ -9,9 +9,8 @@ st.image("./img/ti.jpg")
 df = pd.read_csv("./data/app1.csv")
 
 
-# สร้าง Line plot เพื่อเปรียบเทียบอายุและดัชนีมวลการ (BMI)
-fig_line = px.line(df, x='Age', y='BMI', title='Line Plot: Age vs BMI')
-st.plotly_chart(fig_line)
+fig_scatter = px.scatter(df, x='Age', y='BMI', title='Scatter Plot: Age vs BMI')
+st.plotly_chart(fig_scatter)
 
 
 
