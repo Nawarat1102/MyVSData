@@ -26,7 +26,7 @@ st.plotly_chart(fig_bar)
 
 # สร้างแผนภูมิแท่ง
 fig_bar = px.bar(df, x="Severity", y="BMI", color="Sex", barmode="group",
-                 title="Bar Plot: Average BMI by Severity and Sex")
+                 title="Bar Plot: เปรียบเทียบดัชนีมวลกายและความรุนแกรงระหว่างเพศ")
 st.plotly_chart(fig_bar)
 
 
