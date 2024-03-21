@@ -20,7 +20,7 @@ st_lottie(lottie_hello, key="hello")
 
 st.image("./img/ti.jpg")
 
-st.header("Show Data Index Price")
+st.header("ดัชนีข้อมูล")
 
 df=pd.read_csv("./data/app1.csv")
 st.write(df.head(10))
