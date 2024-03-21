@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="Data Visualization Project",
     page_icon= ":bar_chart:",
 )
-st.sidebar.success("เลือกรายการด้านบน.")
+#st.sidebar.success("เลือกรายการด้านบน.")
 
 st.header("🖥️⌨️การทำ Data Visualization!⌨️🖥️")
 st.subheader("1.หลักการและเหตุผล")
