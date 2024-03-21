@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # อ่านข้อมูลจากไฟล์ CSV
-df = pd.read_csv("app_data.csv")
+df = pd.read_csv("app1.csv")
 
 # สมมติว่า BMI และ Severity เป็นชื่อคอลัมน์ใน CSV ของคุณ
 BMI = df["BMI"]
