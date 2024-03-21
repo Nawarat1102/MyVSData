@@ -9,18 +9,17 @@ st.image("./img/ti.jpg")
 df = pd.read_csv("./data/app1.csv")
 
 
-fig_scatter = px.scatter(df, x='Age', y='BMI', title='Scatter Plot: Age vs BMI')
+fig_scatter = px.scatter(df, x='Age', y='BMI', title='Scatter Plot: การเปรียบเทียบการเกิดระหว่างดัชนีมวลกายและอายุ')
 st.plotly_chart(fig_scatter)
-
-
-
-
 
 
 fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Sex", "Height", "Weight", "Length_of_Stay"],
-                title="Scatter Plot: การเปรียบเทียบความรุนของของการเกิดระหว่างดัชนีมวลกายและอายุ")
+                title="Scatter Plot: จากกราฟด้านบนนำมาแสดงการเปรียบเทียบความรุนของการเกิดเพิ่มเติมได้")
 st.plotly_chart(fig_scatter)
 
+
+fig_bar = px.bar(df, x='Height', y='Weight', title='Bar Chart: Weight vs Height')
+st.plotly_chart(fig_bar)
 
 
 
