@@ -3,15 +3,17 @@ import pandas as pd
 import streamlit as st
 
 st.image("./img/ti.jpg")
+
 # สร้าง DataFrame ของคุณ
 # เช่น
-df=pd.read_csv("./data/app1.csv")
+df = pd.read_csv("./data/app1.csv")
 
 # สร้างแผนภูมิเส้น
-fig = px.line(df, x="Age", y="BMI")
-fig.show()
+fig_line = px.line(df, x="Age", y="BMI")
 
 # สร้างแผนภูมิแท่ง
-fig = px.bar(df, x="Sex", y="Severity")
-fig.show()
+fig_bar = px.bar(df, x="Sex", y="Severity")
 
+# แสดงกราฟโดยใช้คำสั่ง st.plotly_chart()
+st.plotly_chart(fig_line)
+st.plotly_chart(fig_bar)
