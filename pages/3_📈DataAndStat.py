@@ -10,9 +10,8 @@ df = pd.read_csv("./data/app1.csv")
 fig_bar = px.bar(df['Sex'].value_counts(), title='อันตราการเกิดในเพศ')
 st.plotly_chart(fig_bar)
 
-fig_bar = px.histogram(df, x="Age",title="Age Distribution")
-st.plotly_chart(fig_bar)
-
+fig_pie = px.pie(df['Age'], title='Age Distribution')
+st.plotly_chart(fig_pie)
 
 
 
