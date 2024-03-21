@@ -16,8 +16,8 @@ st.plotly_chart(fig_box_bmi)
 fig_box_bmi = px.box(df, y="BMI", title="BMI Distribution")
 st.plotly_chart(fig_box_bmi)
 
-fig_hist = px.histogram(df, x="Weight", title="Weight Distribution", nbins=20)
-st.plotly_chart(fig_hist)
+fig_line_height = px.line(df, y="Height", title="Height Growth")
+st.plotly_chart(fig_line_height)
 
 
 # สร้างกราฟวงกลม
