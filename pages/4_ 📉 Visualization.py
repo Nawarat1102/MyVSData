@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("app1.csv")
 
 # สมมติว่า BMI และ Severity เป็นชื่อคอลัมน์ใน CSV ของคุณ
-BMI = df["BMI"]
-Severity = df["Severity"]
+#BMI = df["BMI"]
+#cSeverity = df["Severity"]
 
 # วาดแผนภูมิกระจาย
 plt.scatter(BMI, Severity)
