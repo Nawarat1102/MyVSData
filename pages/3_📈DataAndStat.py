@@ -10,9 +10,9 @@ df = pd.read_csv("./data/app1.csv")
 fig_bar = px.bar(df['Sex'].value_counts(), title='อันตราการเกิดในเพศ')
 st.plotly_chart(fig_bar)
 
-# สร้างกราฟแบบเส้น
-fig_line = px.line(df['Age'], title='Age Distribution')
-st.plotly_chart(fig_line)
+# สร้างกราฟแบบแท่ง
+fig_bar = px.bar(df['Age'].value_counts(), title='Age Distribution')
+st.plotly_chart(fig_bar)
 
 
 
