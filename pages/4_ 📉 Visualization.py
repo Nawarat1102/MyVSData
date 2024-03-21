@@ -16,8 +16,9 @@ fig_bar = px.bar(df, x="Age", y="BMI")
 
 # สร้างแผนภูมิเปรียบเทียบ
 fig_box = px.box(df, x='Sex', y='BMI')
+
 # สร้างแผนภูมิแผ่น
-fig_pie = px.pie(df, names='Sex')
+fig_pie = px.pie(df, names='BMI')
 
 # แสดงแผนภูมิโดยใช้คำสั่ง st.plotly_chart()
 st.plotly_chart(fig_pie)
