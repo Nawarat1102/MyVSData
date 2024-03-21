@@ -13,6 +13,10 @@ st.plotly_chart(fig_bar)
 fig_bar = px.bar(df['Age'].value_counts(), title='กราฟแผนภูมิแท่ง : อัตราการเกิดในช่วงอายุ')
 st.plotly_chart(fig_bar)
 
+# สร้างกราฟวงกลม
+fig_pie = px.pie(df, values='BMI', title='BMI Distribution')
+st.plotly_chart(fig_pie)
+
 
 
 # Scatter Plot
