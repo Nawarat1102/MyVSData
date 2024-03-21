@@ -9,10 +9,10 @@ st.image("./img/ti.jpg")
 df = pd.read_csv("./data/app1.csv")
 
 # สร้างแผนภูมิเส้น
-fig_line = px.line(df, x="Age", y="BMI")
+fig_line = px.line(df, x="Sex", y="Weight")
 
 # สร้างแผนภูมิแท่ง
-fig_bar = px.bar(df, x="Sex", y="Weight")
+fig_bar = px.bar(df, x="Age", y="BMI")
 
 # แสดงกราฟโดยใช้คำสั่ง st.plotly_chart()
 st.plotly_chart(fig_line)
