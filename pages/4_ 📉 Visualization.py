@@ -8,7 +8,6 @@ st.image("./img/ti.jpg")
 # เช่น
 df = pd.read_csv("./data/app1.csv")
 
-df = pd.read_csv("./data/ข้อมูลอักเสบในเด็ก.csv")
 
 # สร้าง Line plot เพื่อเปรียบเทียบอายุและดัชนีมวลการ (BMI)
 fig_line = px.line(df, x='Age', y='BMI', title='Line Plot: Age vs BMI')
