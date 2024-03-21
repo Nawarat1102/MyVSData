@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 # โหลดข้อมูล
-df = pd.read_csv("./data/ข้อมูลอักเสบในเด็ก.csv")
+df = pd.read_csv("./data/app1.csv")
 
 # Scatter Plot
 fig_scatter = px.scatter(df, x="Age", y="BMI", color="Severity", hover_data=["Sex", "Height", "Weight", "Length_of_Stay"],
