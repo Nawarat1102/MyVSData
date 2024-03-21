@@ -17,6 +17,12 @@ st.plotly_chart(fig_bar)
 fig_pie = px.pie(df, values='BMI', title='BMI Distribution')
 st.plotly_chart(fig_pie)
 
+df_management = df[df['Management'] == 'Management']
+
+# สร้างกราฟ Box Plot
+fig_box = px.box(df_management, y="BMI", title="BMI Distribution for Management")
+st.plotly_chart(fig_box)
+
 
 
 # Scatter Plot
