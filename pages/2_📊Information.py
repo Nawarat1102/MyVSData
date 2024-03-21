@@ -31,14 +31,12 @@ if(st.button("แสดงข้อมูลตัวอย่าง")):
 else:
     st.button("ไม่แสดงข้อมูลตัวอย่าง")
 
-management_counts = df['Management'].value_counts()
 
-st.write("จำนวนในการผ่าตัดแต่ละแบบ:")
+st.header("จำนวนในการผ่าตัดแต่ละแบบ:")
+management_counts = df['Management'].value_counts()
 st.write(management_counts)
 
 
-
+st.header("จำนวนความรุนแรงแต่ละระดับ:")
 management_counts = df['Severity'].value_counts()
-
-st.write("จำนวนความรุนแรงแต่ละระดับ:")
 st.write(management_counts)
