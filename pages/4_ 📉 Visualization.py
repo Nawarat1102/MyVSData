@@ -30,7 +30,7 @@ fig_bar = px.bar(df, x="Management", y="BMI", color="Sex", barmode="group",
 st.plotly_chart(fig_bar)
 
 
-st.header("เปรียบเทียบดัชนีมวลกายและความรุนแกรงระหว่างเพศ")
+st.header("เปรียบเทียบดัชนีมวลกายและความรุนแรงระหว่างเพศ")
 fig_bar = px.bar(df, x="Severity", y="BMI", color="Sex", barmode="group",
                  title="Bar Plot: ความรุนแรง อักเสบ รุนแรง")
 st.plotly_chart(fig_bar)
